@@ -18,7 +18,7 @@
     "@walletconnect/ethereum-provider": "^2.23.9",
     "accounts": "^0.6.7",
     "bs58": "^6.0.0",
-    "next": "^15.3.3",
+    "next": "15.5.15",
     "ox": "^0.14.20",
     "porto": "^0.2.37",
     "react": "^19.0.0",
@@ -32,7 +32,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.1.0",
+    "eslint-config-next": "15.5.15",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
