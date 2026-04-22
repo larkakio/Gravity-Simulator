@@ -18,15 +18,16 @@ const mono = JetBrains_Mono({
   weight: ["400", "500", "600"],
 });
 
-const baseAppId =
-  process.env.NEXT_PUBLIC_BASE_APP_ID ?? "configure-base-app-id";
+const productionSiteUrl = "https://gravity-simulator-zeta.vercel.app";
+const productionBaseAppId = "69e86d1c0521103d063991ec";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? productionSiteUrl;
+const baseAppId = process.env.NEXT_PUBLIC_BASE_APP_ID ?? productionBaseAppId;
 
 export const metadata: Metadata = {
   title: "Gravity Simulator",
   description: "Cyberpunk gravity puzzle on Base — swipe to thrust, reach the portal.",
-  metadataBase: process.env.NEXT_PUBLIC_SITE_URL
-    ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-    : undefined,
+  metadataBase: new URL(siteUrl),
   icons: {
     icon: "/app-icon.jpg",
     apple: "/app-icon.jpg",
